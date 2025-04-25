@@ -1,13 +1,14 @@
 .container{
     width: 80%;
-    
+    border-top-radius: 20px;
     margin: 0 auto;
-    background-color: brown;
+    background-color: pink;
 }
 
 img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -20,4 +21,73 @@ img{
         background-color: lime;
     }
 
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 60vh;
+    background-color: lightgreen;
+
+}
+
+.item{
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+    max-height: auto;
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0 200px 800px rgba(0, 0, 0, 0.2);
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'menu main right'
+                         'footer footer footer';
+
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.item1{
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.item2{
+    grid-area: menu;
+    background-color: orange;
+}
+.item3{
+    grid-area: main;
+    background-color:indigo;
+}
+.item4{
+    grid-area: right;
+    background-color: purple;
+}
+.item5{
+    grid-area: footer;
+    background-color: blue;
+}
+.container1{
+    background-image: url('https://www.w3schools.com/w3images/lights.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    max-width: 100%;
+    background-color: black;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 200px 800px rgba(0, 0, 0, 0.2);
 }
